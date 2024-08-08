@@ -1,3 +1,4 @@
+import java.lang.*;
 public class operator
 {
 	public static void main(String[] args)
@@ -56,7 +57,11 @@ public class operator
 		System.out.println(false ^ false);
 
 		System.out.println("=== Bitwise Operator ===");
-		System.out.println("4 & 5 = "+ (4 & 5));
-		System.out.println("4 & 5 = "+ (4 | 5));
+		System.out.println("4 & 5 = "+ (4 & 5)); // This will return 4 (100 & 101) = (100) 4
+		System.out.println("4 & 5 = "+ (4 | 5)); // This will return 5 (100 | 101) = (101) 5
+		System.out.println("4 ^ 5 = "+(4 ^ 5)); // This will return 1 (100 ^ 101) = (001) 1
+		System.out.println("~1 = "+~1); // This will return -2
+		
+		System.out.println(Integer.toBinaryString(1));
 	}
 }
