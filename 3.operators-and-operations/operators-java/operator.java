@@ -61,7 +61,19 @@ public class operator
 		System.out.println("4 & 5 = "+ (4 | 5)); // This will return 5 (100 | 101) = (101) 5
 		System.out.println("4 ^ 5 = "+(4 ^ 5)); // This will return 1 (100 ^ 101) = (001) 1
 		System.out.println("~1 = "+~1); // This will return -2
-		
-		System.out.println(Integer.toBinaryString(1));
+		// This example will show how this is flipping bits
+		System.out.println(Integer.toBinaryString(1)); //00000001
+		System.out.println(Integer.toBinaryString(-2)); //11111110
+		System.out.println((byte)0b11111110); //-2
+		System.out.println((byte)0b10000000); //-128 = -(2 ^ 7)
+		System.out.println((byte)0b11000000); // -6 = -(2 ^ 7) + (2 ^ 6)
+
+		System.out.println("5 << 2 = "+ (5 << 2));
+		System.out.println("5 >> 2 = "+ (5 >> 2));
+		System.out.println("-122 >>> 5 = "+ (-122 >> 5));
+
+		System.out.println("=== Ternary Operator ===");
+		System.out.println(2 > 1 ? "This is true":"This is false");
+		System.out.println(2 < 1 ? "This is true":"This is false");
 	}
 }
